@@ -1,0 +1,9 @@
+Run the file on terminal as
+python passwdparser.py "<path to /etc/passwd file>" "<path to /etc/group file>"
+
+Ex: python passwdparser.py /etc/passwd /etc/group
+
+The output will be written to a file by the name output.json. Path for this can be changed in invoker() function
+output.json file will get updated at each run of file in cron job storing the current state by parsing of passwd and group files.
+
+At the end after the execution of invoker function we get a json obj returned by the function and I've also printed it to the terminal for reference.
